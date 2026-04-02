@@ -1,0 +1,5 @@
+ewaste-dataset/
+datasets-source/
+*.zip
+*.pt
+*.onnx
