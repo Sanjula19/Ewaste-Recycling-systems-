@@ -1,0 +1,16 @@
+path: ewaste-dataset
+
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 7
+
+names:
+  0: smartphone
+  1: laptop
+  2: battery
+  3: pcb
+  4: charger
+  5: keyboard
+  6: mouse
