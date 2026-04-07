@@ -1,61 +1,144 @@
+<h1 align="center">
+♻️ AI-Powered Automated Waste Segregation & E-Waste Recycling System
+</h1>
 
-# AI-Powered Automated Waste Segregation and E-Waste Recycling System
+<p align="center">
+<img src="https://img.shields.io/badge/AI-Waste%20Management-green"/>
+<img src="https://img.shields.io/badge/YOLOv8-Detection-blue"/>
+<img src="https://img.shields.io/badge/FastAPI-Backend-teal"/>
+<img src="https://img.shields.io/badge/React-Frontend-61DAFB"/>
+<img src="https://img.shields.io/badge/Status-Research-orange"/>
+</p>
 
-## 📌 Project Overview
-The AI-Powered Automated Waste Segregation and E-Waste Recycling System bridges the gap between simple visual object recognition and intelligent, end-to-end waste management. Traditional recycling systems often operate as "black boxes" that ignore waste contamination, fail to map internal device hazards, rely on static processing parameters, and lack real-time economic forecasting. 
-
-This project transitions waste handling from a linear "Extract-Consume-Dispose" sequence to a circular "value recovery" model. By combining computer vision, materials science, and time-series forecasting, this system is designed to achieve a **100% landfill diversion rate** (Zero-Waste).
-
----
-
-## ⚙️ System Architecture (The Four Components)
-This repository hosts a microservices-based web application divided into four core intelligent components.
-
-### **Component 01: Smart Contamination Detection System**
-*   **Focus:** Moves beyond identifying *what* the waste is to evaluating its *condition*.
-*   **Mechanism:** Uses a ResNet50-based Convolutional Neural Network (CNN) integrated with Gray-Level Co-occurrence Matrix (GLCM) features to perform surface texture analysis. 
-*   **Output:** Detects grease, rust, and mud to assign a three-tier quality grade (Grade A: Clean, Grade B: Washable, Grade C: Landfill/Energy Recovery).
-
-### **Component 02: Intelligent Hazard and Material Identification System**
-*   **Focus:** Provides device-to-material mapping and explainable hazard reasoning for e-waste.
-*   **Mechanism:** Utilizes YOLOv8 for rapid device category detection (e.g., smartphones, laptops) and links the identified models to a structured materials knowledge base built from iFixit and PubChem safety data.
-*   **Output:** Generates transparent cause-and-effect hazard explanations (e.g., thermal runaway risks of lithium-ion batteries) alongside step-by-step safety handling instructions and PPE recommendations.
-
-### **Component 03: Smart Process Optimization Engine**
-*   **Focus:** Replaces static recycling parameters with a dynamic, weather-resilient "Dual-Pathway Adaptive Optimization Engine".
-*   **Mechanism:** Automatically distinguishes between Abiotic (Plastics/Metals) and Biotic (Organics) streams. It applies real-time moisture sensing to adjust processing logic.
-*   **Output:** For wet plastics, it triggers pre-drying cycles; for wet organics, it calculates C:N ratios and recommends biological additives to accelerate decomposition without harmful chemicals.
-
-### **Component 04: Predictive Economic Valuation & Strategic Disposition Dashboard**
-*   **Focus:** Solves the "Management Dead-End" by providing strategic financial and zero-waste disposition logic.
-*   **Mechanism:** Implements an ARIMA (Auto-Regressive Integrated Moving Average) time-series model to forecast commodity prices (Gold, Copper, Lithium) up to 90 days in advance.
-*   **Output:** Recommends "Sell/Hold" strategies for high-value metals and automatically routes non-recyclable "Grade C" residuals to thermal energy recovery or pyrolysis to ensure 0% landfill contribution.
+<p align="center">
+🌍 Transforming Waste into Value using AI & Smart Recycling
+</p>
 
 ---
 
-## 🛠️ Technology Stack
-The system is built using a modern, scalable microservices architecture.
+## 🎯 Project Overview
 
-*   **Frontend:** React.js, Tailwind CSS (High-contrast circular economy UI), Recharts (for market trends).
-*   **Backend:** Python, FastAPI (Four independent microservices for each component API).
-*   **AI/ML Models:** YOLOv8 (Object Detection), ResNet50 (CNN), ARIMA & LSTM (Time-series forecasting), Decision Tree Classifiers.
-*   **Databases:** PostgreSQL (Historical price storage and digital manifests), Neo4j (Graph database for materials knowledge mapping).
+This research project introduces an **AI-powered intelligent waste segregation and e-waste recycling system** that improves traditional recycling by:
 
----
+✅ Detecting waste contamination  
+✅ Identifying hazardous materials  
+✅ Optimizing recycling processes  
+✅ Predicting economic value of recovered materials  
 
-## 📊 Datasets Used
-The models are trained and validated using a multi-domain data architecture:
-*   **Visual Data:** TrashNet, TACO, RealWaste, and a Local E-Waste Collection dataset.
-*   **Materials & Safety Data:** iFixit API (10,000+ device teardowns), PubChem Safety Data Sheets (200+ materials).
-*   **Economic & Processing Data:** Kaggle Metals (10 years of historical pricing), World Bank Pink Sheet, ScrapMonster, EPA WARM Models, and IEA Biogas Yield Benchmarks.
+The system supports a **Zero-Waste Circular Economy** model.
 
 ---
 
+## 🎥 System Demo
 
-## 🤝 Project Team & Component Allocation
-*   **Component 01:** Smart Contamination Detection System
-*   **Component 02:** Intelligent Hazard and Material Identification System 
-*   **Component 03:** Smart Process Optimization Engine
-*   **Component 04:** Predictive Economic Valuation & Strategic Disposition Dashboard
-```
+<p align="center">
+<img src="docs/demo.gif" width="700"/>
+</p>
+
+---
+
+# 🧠 System Architecture
+
+This project consists of **4 Intelligent Components**
+
+---
+
+## 🔍 Component 01 — Smart Contamination Detection
+- CNN + GLCM Texture Analysis
+- Detects grease, rust, mud
+- Assigns quality grade (A, B, C)
+
+Output:
+Grade A → Clean
+Grade B → Wash Required
+Grade C → Energy Recovery
+
+
+---
+
+## ⚠️ Component 02 — Hazard & Material Identification
+- YOLOv8 device detection
+- Material knowledge mapping
+- Hazard explanation system
+- PPE recommendations
+
+Example:
+Device: Smartphone
+Hazard: Lithium Battery
+Risk: Thermal Runaway
+
+
+---
+
+## ⚙️ Component 03 — Smart Process Optimization
+- Moisture-based adaptive recycling
+- Plastic drying recommendations
+- Organic waste decomposition logic
+- C:N ratio calculation
+
+---
+
+## 📈 Component 04 — Predictive Economic Valuation
+- ARIMA Forecasting Model
+- Metal price prediction (Gold, Copper, Lithium)
+- Sell / Hold recommendation
+- Zero landfill strategy
+
+---
+
+# 🛠️ Technology Stack
+
+### Frontend
+- React.js
+- Tailwind CSS
+- Recharts
+
+### Backend
+- FastAPI (Python)
+- Microservices Architecture
+
+### AI Models
+- YOLOv8
+- ResNet50
+- ARIMA
+- Decision Trees
+
+### Database
+- PostgreSQL
+- Neo4j Graph DB
+
+---
+
+# 📊 Datasets Used
+
+| Category | Dataset |
+|----------|---------|
+| Waste Images | TrashNet |
+| Waste Images | TACO |
+| Waste Images | RealWaste |
+| E-Waste | Custom Dataset |
+| Materials | iFixit |
+| Safety Data | PubChem |
+| Economic Data | Kaggle Metals |
+| Forecast Data | World Bank |
+
+---
+
+# 🚀 Installation
+
+### Clone Repository
+
+git clone https://github.com/your-username/AI-Waste-System.git
+cd AI-Waste-System
+
+📂 Project Structure
+
+AI-Waste-System
+│
+├── frontend
+├── backend
+├── datasets
+├── models
+├── docs
+└── README.md
 
